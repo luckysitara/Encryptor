@@ -4,7 +4,7 @@ An Encryption tool using AES
 Below is a sample `README.md` file for your Android encryption app built with Kivy. This README will provide users with information about the app, how to install and use it, and some technical details.
 
 
-markdown
+```markdown
 # Android Encryption Tool
 
 This Android Encryption Tool is a Python-based mobile application that allows users to securely encrypt and decrypt files and directories using the Advanced Encryption Standard (AES). The app requires users to set a master key on the first launch, which can be used to decrypt any files encrypted by the tool in case the original password is forgotten.
@@ -105,17 +105,4 @@ If you want to contribute to the development of this app, feel free to fork the 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ```
-
-### **Explanation:**
-
-- **Introduction & Features:** Provides a clear overview of what the app does and its key features.
-- **Installation:** Step-by-step instructions on how to install dependencies and build the Android APK using Buildozer.
-- **Usage:** Instructions on how to use the app for encryption and decryption.
-- **Technical Details:** Details about the encryption algorithm and file handling.
-- **Security Considerations:** Important notes on maintaining the security of encrypted files.
-- **Contributing:** Information for developers who want to contribute to the project.
-- **License:** The type of license under which the project is released.
-
-You can customize this `README.md` as needed to better fit your project and audience.
