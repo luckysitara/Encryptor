@@ -33,7 +33,13 @@ You can install the required dependencies using `pip`:
 pip install kivy cryptography
 pip install buildozer
 ```
+Linux might need this 
 
+```bash
+sudo apt install python3-pip python3-dev build-essential \
+libssl-dev libffi-dev python3-setuptools \
+libgmp3-dev python3-venv
+```
 ### Building the APK
 
 1. **Initialize Buildozer:**
@@ -105,4 +111,4 @@ If you want to contribute to the development of this app, feel free to fork the 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+
