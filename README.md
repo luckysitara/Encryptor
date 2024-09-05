@@ -1,11 +1,60 @@
-### Encryptor
-An Encryption tool using AES
+### Shacrypt
+This is a Python-based encryption and decryption tool that allows you to encrypt and decrypt files and directories using AES encryption. It comes with a GUI built using Tkinter, making it easy for users to select files or directories for encryption or decryption. The tool provides password protection and supports using a master password for decryption in case the main password is forgotten.
 
-Below is a sample `README.md` file for your Android encryption app built with Kivy. This README will provide users with information about the app, how to install and use it, and some technical details.
+## Features
+- **AES Encryption**: Uses AES encryption with CBC mode to secure your files and directories.
+- **Password Derivation**: Utilizes PBKDF2HMAC to derive a secure encryption key from the provided password.
+- **File & Directory Support**: You can encrypt or decrypt individual files or entire directories recursively.
+- **Master Password**: In case the main password fails during decryption, a master password can be used as a backup.
+- **Graphical User Interface (GUI)**: The application has an easy-to-use GUI built with Tkinter.
+
+## Installation
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/luckysitara/Encryptor.git
+    cd Encryptor
+    ```
+
+2. Install the required dependencies:
+    ```bash
+    pip install cryptography tkinter
+    ```
+
+3. Run the application:
+    ```bash
+    python encrypt.py
+    ```
+
+## Usage
+
+1. **Encrypting a File/Directory**:
+   - Click the `Browse` button to select the file or directory you want to encrypt.
+   - Enter a password to encrypt the selected file/directory.
+   - Press the `Encrypt` button. The selected file will be encrypted, and the original file will be deleted.
+
+2. **Decrypting a File/Directory**:
+   - Click the `Browse` button to select the encrypted `.enc` file or directory.
+   - Enter the password used for encryption.
+   - Optionally, enter a master password (in case the main password is incorrect or forgotten).
+   - Press the `Decrypt` button to restore the original file(s).
+
+## Requirements
+- Python 3.6+
+- Tkinter (for the GUI)
+- Cryptography library
+
+## File Encryption Format
+- The encryption process appends the initialization vector (IV) to the ciphertext, allowing for secure decryption.
+- Encrypted files are saved with the `.enc` extension.
+- The original file is deleted after encryption to ensure security.
+
+## Notes
+- The application will remove the original file after encryption.
+- Encrypted files must have the `.enc` extension to be decrypted correctly.
+- The password and master password should be securely stored by the user, as they are required for decryption.
 
 
-
-# Android Encryption Tool
+# For Android
 
 This Android Encryption Tool is a Python-based mobile application that allows users to securely encrypt and decrypt files and directories using the Advanced Encryption Standard (AES). The app requires users to set a master key on the first launch, which can be used to decrypt any files encrypted by the tool in case the original password is forgotten.
 
